@@ -27,3 +27,13 @@ Node.js E-Commerce App REST API with MongoDB | Shopping API with Stripe &amp; JW
    install mongodb
    npm install mongodb
  """
+
+ # Cryptojs
+ """ 
+   npm i crypto-js
+   var encrypted = CryptoJS.AES.encrypt("Message", "Secret Passphrase");
+​
+   var decrypted = CryptoJS.AES.decrypt(encrypted, "Secret Passphrase");
+
+
+ """
