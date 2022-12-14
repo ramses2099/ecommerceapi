@@ -17,11 +17,11 @@ router.put('/:id', verifyTokenAndAuthorization, async (req, res) => {
 
         res.status(200).json(updatedUser);
         
-    } catch (error) {
+    } catch (err) {
         res.status(500).json(err);
     }
     
-})
+});
 
 router.delete('/:id', verifyTokenAndAuthorization, async (req, res) => {
     try {
@@ -29,11 +29,11 @@ router.delete('/:id', verifyTokenAndAuthorization, async (req, res) => {
 
         res.status(200).json("User has been deleted...");
         
-    } catch (error) {
+    } catch (err) {
         res.status(500).json(err);
     }
     
-})
+});
 
 router.get('/find/:id', verifyTokenAndAdmin, async (req, res) => {
     try {
@@ -43,11 +43,11 @@ router.get('/find/:id', verifyTokenAndAdmin, async (req, res) => {
 
         res.status(200).json(others);
         
-    } catch (error) {
+    } catch (err) {
         res.status(500).json(err);
     }
     
-})
+});
 
 router.get('/', verifyTokenAndAdmin, async(req, res)=>{
     const query = req.query.new;

@@ -25,7 +25,7 @@ router.put('/:id', verifyTokenAndAdmin, async (req, res) => {
 
         res.status(200).json(updateProduct);
         
-    } catch (error) {
+    } catch (err) {
         res.status(500).json(err);
     }
     
@@ -38,7 +38,7 @@ router.delete('/:id', verifyTokenAndAdmin, async (req, res) => {
 
         res.status(200).json("Product has been deleted...");
         
-    } catch (error) {
+    } catch (err) {
         res.status(500).json(err);
     }
     
@@ -51,7 +51,7 @@ router.get('/find/:id', async (req, res) => {
         
         res.status(200).json(product);
         
-    } catch (error) {
+    } catch (err) {
         res.status(500).json(err);
     }
     
