@@ -46,3 +46,10 @@ Node.js E-Commerce App REST API with MongoDB | Shopping API with Stripe &amp; JW
    Bearer 455s4f5sfs4fsf
  
  """
+
+ # CORS
+ """
+   npm install cors
+ """
+
+ 
